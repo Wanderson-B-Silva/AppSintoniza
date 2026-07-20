@@ -1,0 +1,15 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+db.sqlite3
+
+# Node / React Native
+node_modules/
+.expo/
+package-lock.json
+
+# Sistema
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+{
+  "features": [
+    "Idade",
+    "Tempo Empresa (anos)",
+    "Estresse (0-10)",
+    "Burnout (0-10)",
+    "Satisfação (0-10)",
+    "Relacionamentos (0-10)",
+    "Carga Trabalho (0-10)",
+    "Equilíbrio V/T (0-10)",
+    "Autonomia (0-10)",
+    "Reconhecimento (0-10)",
+    "Comunicação Gestor (0-10)",
+    "Segurança Psicológica (0-10)",
+    "Suporte Pares (0-10)",
+    "Clareza de Papel (0-10)",
+    "Ausências (dias)",
+    "Horas Extras/semana"
+  ],
+  "total": 16,
+  "data_salvamento": "2026-06-04T18:17:37.069626"
+}

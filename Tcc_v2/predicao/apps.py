@@ -1,0 +1,7 @@
+from django.apps import AppConfig
+
+
+class PredicaoConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'predicao'
+    verbose_name = 'Predição com Machine Learning'

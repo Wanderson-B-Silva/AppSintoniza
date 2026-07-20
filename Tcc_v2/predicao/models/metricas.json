@@ -1,0 +1,212 @@
+{
+  "acuracia": 0.85,
+  "precisao_macro": 0.6517,
+  "recall_macro": 0.5404,
+  "f1_macro": 0.5722,
+  "roc_auc": 0.9469,
+  "metricas_por_classe": {
+    "Baixo": {
+      "precisao": 0.875,
+      "recall": 0.4118,
+      "f1_score": 0.56,
+      "suporte": 17
+    },
+    "Médio": {
+      "precisao": 0.8298,
+      "recall": 0.9832,
+      "f1_score": 0.9,
+      "suporte": 119
+    },
+    "Alto": {
+      "precisao": 0.902,
+      "recall": 0.7667,
+      "f1_score": 0.8288,
+      "suporte": 60
+    },
+    "Crítico": {
+      "precisao": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0,
+      "suporte": 4
+    }
+  },
+  "matriz_confusao": {
+    "matriz": [
+      [
+        7,
+        10,
+        0,
+        0
+      ],
+      [
+        1,
+        117,
+        1,
+        0
+      ],
+      [
+        0,
+        14,
+        46,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        0
+      ]
+    ],
+    "labels": [
+      "Baixo",
+      "Médio",
+      "Alto",
+      "Crítico"
+    ]
+  },
+  "total_amostras": 200,
+  "algoritmo": "random_forest",
+  "validacao_cruzada": {
+    "scores": [
+      0.75,
+      0.86,
+      0.805,
+      0.75,
+      0.72
+    ],
+    "media": 0.777,
+    "desvio_padrao": 0.0498,
+    "folds": 5
+  },
+  "importancia_features": [
+    {
+      "feature": "Burnout (0-10)",
+      "importancia": 0.2236
+    },
+    {
+      "feature": "Estresse (0-10)",
+      "importancia": 0.1751
+    },
+    {
+      "feature": "Satisfação (0-10)",
+      "importancia": 0.1081
+    },
+    {
+      "feature": "Carga Trabalho (0-10)",
+      "importancia": 0.1025
+    },
+    {
+      "feature": "Ausências (dias)",
+      "importancia": 0.0656
+    },
+    {
+      "feature": "Segurança Psicológica (0-10)",
+      "importancia": 0.0579
+    },
+    {
+      "feature": "Relacionamentos (0-10)",
+      "importancia": 0.0309
+    },
+    {
+      "feature": "Reconhecimento (0-10)",
+      "importancia": 0.0306
+    },
+    {
+      "feature": "Horas Extras/semana",
+      "importancia": 0.0298
+    },
+    {
+      "feature": "Suporte Pares (0-10)",
+      "importancia": 0.0285
+    },
+    {
+      "feature": "Idade",
+      "importancia": 0.0273
+    },
+    {
+      "feature": "Clareza de Papel (0-10)",
+      "importancia": 0.0258
+    },
+    {
+      "feature": "Equilíbrio V/T (0-10)",
+      "importancia": 0.0257
+    },
+    {
+      "feature": "Comunicação Gestor (0-10)",
+      "importancia": 0.0252
+    },
+    {
+      "feature": "Autonomia (0-10)",
+      "importancia": 0.0236
+    },
+    {
+      "feature": "Tempo Empresa (anos)",
+      "importancia": 0.0196
+    }
+  ],
+  "info_preprocessamento": {
+    "features": [
+      "Idade",
+      "Tempo Empresa (anos)",
+      "Estresse (0-10)",
+      "Burnout (0-10)",
+      "Satisfação (0-10)",
+      "Relacionamentos (0-10)",
+      "Carga Trabalho (0-10)",
+      "Equilíbrio V/T (0-10)",
+      "Autonomia (0-10)",
+      "Reconhecimento (0-10)",
+      "Comunicação Gestor (0-10)",
+      "Segurança Psicológica (0-10)",
+      "Suporte Pares (0-10)",
+      "Clareza de Papel (0-10)",
+      "Ausências (dias)",
+      "Horas Extras/semana"
+    ],
+    "total_features": 16,
+    "estrategia_imputacao": "mediana",
+    "normalizacao": "StandardScaler (média=0, desvio=1)",
+    "codificacao_target": {
+      "Baixo": 0,
+      "Médio": 1,
+      "Alto": 2,
+      "Crítico": 3
+    },
+    "medias_scaler": {
+      "Idade": 41.298,
+      "Tempo Empresa (anos)": 10.507,
+      "Estresse (0-10)": 4.9316,
+      "Burnout (0-10)": 4.9106,
+      "Satisfação (0-10)": 4.9665,
+      "Relacionamentos (0-10)": 5.0633,
+      "Carga Trabalho (0-10)": 5.0737,
+      "Equilíbrio V/T (0-10)": 4.9672,
+      "Autonomia (0-10)": 5.1101,
+      "Reconhecimento (0-10)": 4.9119,
+      "Comunicação Gestor (0-10)": 5.1453,
+      "Segurança Psicológica (0-10)": 5.0666,
+      "Suporte Pares (0-10)": 5.0998,
+      "Clareza de Papel (0-10)": 5.0047,
+      "Ausências (dias)": 10.356,
+      "Horas Extras/semana": 15.449
+    },
+    "desvios_scaler": {
+      "Idade": 10.991,
+      "Tempo Empresa (anos)": 6.1289,
+      "Estresse (0-10)": 2.8175,
+      "Burnout (0-10)": 2.915,
+      "Satisfação (0-10)": 2.8949,
+      "Relacionamentos (0-10)": 2.8656,
+      "Carga Trabalho (0-10)": 2.8749,
+      "Equilíbrio V/T (0-10)": 2.8886,
+      "Autonomia (0-10)": 2.861,
+      "Reconhecimento (0-10)": 2.8373,
+      "Comunicação Gestor (0-10)": 2.864,
+      "Segurança Psicológica (0-10)": 2.8537,
+      "Suporte Pares (0-10)": 2.9623,
+      "Clareza de Papel (0-10)": 2.9458,
+      "Ausências (dias)": 6.0552,
+      "Horas Extras/semana": 8.8709
+    }
+  }
+}
